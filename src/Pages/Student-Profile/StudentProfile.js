@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState, useCallback } from 'react';
 import {
   Container,
   Grid,
@@ -75,7 +75,7 @@ const StudentProfile = () => {
     setIsEdit(true);
   };
 
-  const getProfile = async () => {
+  const getProfile = useCallback(async () => {
     const url = `https://6541fd90f0b8287df1ff4458.mockapi.io/students/${id}`;
 
     try {
@@ -87,11 +87,11 @@ const StudentProfile = () => {
     } catch (error) {
       console.log(error);
     }
-  };
+  }, [id, setStudentName]);
 
-  useEffect(() => {
-    getProfile();
-  }, []);
+  // useEffect(() => {
+  //   getProfile();
+  // }, []);
 
   return (
     <>
