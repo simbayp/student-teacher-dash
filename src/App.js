@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { StudentProvider } from './contexts/StudentContext';
 import SharedContent from './utils/SharedContent';
-import Dashboard from './pages/dashboards/Dashboard';
+import Dashboard from './pages/dashboard/Dashboard';
 import StudentProfile from './pages/student-profile/StudentProfile';
 
 const App = () => {
