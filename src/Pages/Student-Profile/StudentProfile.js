@@ -16,9 +16,9 @@ import {
   Input,
 } from '@mui/material';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
-import LineChart from '../../components/Charts/LineChart';
-import DonutChart from '../../components/Charts/DonutChart';
-import StudentContext from '../../context/StudentContext';
+import LineChart from '../../components/charts/LineChart';
+import DonutChart from '../../components/charts/DonutChart';
+import StudentContext from '../../contexts/StudentContext';
 import DataUsageIcon from '@mui/icons-material/DataUsage';
 import CheckIcon from '@mui/icons-material/Check';
 import { useParams } from 'react-router-dom';
@@ -88,10 +88,6 @@ const StudentProfile = () => {
       console.log(error);
     }
   }, [id, setStudentName]);
-
-  // useEffect(() => {
-  //   getProfile();
-  // }, []);
 
   return (
     <>

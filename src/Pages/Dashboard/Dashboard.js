@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Stack, Typography } from '@mui/material';
-import StudentTable from '../../components/Table/StudentTable';
+import StudentTable from '../../components/table/StudentTable';
 import AttendanceCard from '../../components/cards/AttendanceCard';
 import PerformanceCard from '../../components/cards/PerformanceCard';
 import TopperCard from '../../components/cards/TopperCard';
-import AddModal from '../../components/Modal/AddModal';
+import AddModal from '../../components/modal/AddModal';
 
 const Dashboard = () => {
   return (

@@ -14,7 +14,7 @@ import {
 import { Link, useNavigate } from 'react-router-dom';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import HamburgerMenu from './HamburgerMenu';
-import StudentContext from '../../context/StudentContext';
+import StudentContext from '../../contexts/StudentContext';
 
 const Navbar = () => {
   const [value, setValue] = useState(0);

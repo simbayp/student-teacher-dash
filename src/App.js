@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { StudentProvider } from "./context/StudentContext";
-import SharedContent from "./Helper/SharedContent";
-import Dashboard from "./Pages/Dashboard/Dashboard";
-import StudentProfile from "./Pages/Student-Profile/StudentProfile";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { StudentProvider } from './contexts/StudentContext';
+import SharedContent from './utils/SharedContent';
+import Dashboard from './pages/dashboard/Dashboard';
+import StudentProfile from './pages/student-profile/StudentProfile';
 
 const App = () => {
   return (
